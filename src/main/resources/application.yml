@@ -1,0 +1,8 @@
+spring:
+    datasource:
+        username: alice
+        password: alice
+        url: jdbc:mysql://pridedevdatabase.c3lbe0bvk2jp.us-east-1.rds.amazonaws.com/alice
+    jpa:
+        hibernate:
+            ddl-auto: update
