@@ -1,6 +1,8 @@
 package com.anaalice.prideDevBank.services;
 
 
+import static com.anaalice.prideDevBank.util.ValidationUtil.validarCPF;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +22,7 @@ public class ClienteService {
 
 	
 	public ClienteEntity criarNovoCliente(ClienteEntity cliente) {
-		
+		validarCPF(cliente.getCpf());
 		clienteRespository.save(cliente);
 		
 		return cliente;
