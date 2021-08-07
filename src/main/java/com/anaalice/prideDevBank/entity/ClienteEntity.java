@@ -7,12 +7,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @Entity
-@Table(name="cliente")
+@Table(name="cliente", uniqueConstraints = @UniqueConstraint(columnNames = {"cpf"} ))
 @Component
 public class ClienteEntity implements Serializable {
 
@@ -21,11 +25,22 @@ public class ClienteEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+
+	@NonNull
+	@JsonProperty("nome")
 	private String nome;
+	
+	@NonNull
+	@JsonProperty("cpf")
 	private String cpf;
+	
+	
+	@JsonProperty("nomeSocial")
 	private String nomeSocial;
 	
-	
+	public Integer getId() {
+		return id;
+	}
 	public String getNome() {
 		return nome;
 	}
