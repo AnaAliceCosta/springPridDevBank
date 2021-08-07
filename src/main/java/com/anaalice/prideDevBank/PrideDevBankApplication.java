@@ -2,9 +2,13 @@ package com.anaalice.prideDevBank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import com.anaalice.prideDevBank.repository.ClienteRespository;
-
+@ComponentScan({"com.anaalice.prideDevBank"})
+@EntityScan({"com.anaalice.prideDevBank.entity"})
+@EnableJpaRepositories("com.anaalice.prideDevBank.repository")
 @SpringBootApplication
 public class PrideDevBankApplication {
 

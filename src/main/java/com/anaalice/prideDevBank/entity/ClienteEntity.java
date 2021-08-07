@@ -8,23 +8,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 @Entity
-@Table(name="tabela_cliente")
+@Table(name="cliente")
+@Component
 public class ClienteEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private Integer id;
 	private String nome;
 	private String cpf;
 	private String nomeSocial;
 	
 	
-	public int getId() {
-		return id;
-	}
 	public String getNome() {
 		return nome;
 	}
@@ -37,6 +38,8 @@ public class ClienteEntity implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
