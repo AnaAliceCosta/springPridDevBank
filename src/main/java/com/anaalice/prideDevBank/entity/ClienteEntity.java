@@ -34,7 +34,8 @@ public class ClienteEntity implements Serializable {
 	@JsonProperty("cpf")
 	private String cpf;
 	
-	
+	private Double saldo;
+
 	@JsonProperty("nomeSocial")
 	private String nomeSocial;
 	
@@ -47,6 +48,10 @@ public class ClienteEntity implements Serializable {
 	public String getCpf() {
 		return cpf;
 	}
+	public Double getSaldo() {
+		return saldo;
+	}
+
 	public String getNomeSocial() {
 		return nomeSocial;
 	}
@@ -60,6 +65,9 @@ public class ClienteEntity implements Serializable {
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
 	}
 	public void setNomeSocial(String nomeSocial) {
 		this.nomeSocial = nomeSocial;
