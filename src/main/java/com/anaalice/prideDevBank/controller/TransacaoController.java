@@ -18,22 +18,14 @@ public class TransacaoController {
 	@Autowired
 	TransacaoService transacaoService;
 	
-	@Autowired
-	
-	ContaService contaService;
-	
-	@PostMapping("/transacao/${numeroConta}/${numeroAgencia}")
+	@PostMapping("/transacao/{numeroConta}/{numeroAgencia}")
 	public ResponseEntity<TransacaoEntity> criaTransacao(@PathVariable String numeroConta,
 			@PathVariable String numeroAgencia , @RequestBody TransacaoEntity transacao){
 		
-		ContaEntity contaOrigem = contaService.getConta(numeroAgencia,numeroConta);
-		
-		transacao.setContaOrigem(contaOrigem);
-		transacaoService.criaTransacao(transacao);
-		
-		
+		transacaoService.criaTransacao(transacao,numeroConta,numeroAgencia);
 		
 		return ResponseEntity.ok(transacao);
+	
 	}
 	
 }

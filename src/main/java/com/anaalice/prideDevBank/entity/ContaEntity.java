@@ -32,6 +32,9 @@ public class ContaEntity implements Serializable {
 	@JsonProperty("numeroConta")
 	private String numeroConta;	
 	
+	@JsonProperty("Saldo")
+	private Double saldo;
+	
 	@OneToOne(cascade=CascadeType.PERSIST)
 	@JoinColumn(name = "id_cliente", referencedColumnName = "id")
 	private ClienteEntity cliente;
@@ -59,6 +62,12 @@ public class ContaEntity implements Serializable {
 	}
 	public void setCliente(ClienteEntity cliente) {
 		this.cliente = cliente;
+	}
+	public Double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
 	}
 	
 	
