@@ -66,9 +66,5 @@ public class ClienteEntity implements Serializable {
 		this.nomeSocial = nomeSocial;
 	}
 	
-	
-	
-	
-	
 
 }

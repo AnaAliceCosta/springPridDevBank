@@ -1,5 +1,7 @@
 package com.anaalice.prideDevBank.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,18 +14,19 @@ import com.anaalice.prideDevBank.repository.ContaRepository;
 @Service
 public class ContaService {
 	@Autowired 
-	ContaRepository contaRepository;
+	ContaRepository contaRespository;
 	
 	public ContaEntity savarConta(ContaEntity conta) {
-		contaRepository.save(conta);
+		contaRespository.save(conta);
 		
 		return conta;
 	}
 
 	public ContaEntity getConta(String numeroAgencia, String numeroConta) {
-		Optional<ContaEntity> contaOptional = contaRepository.findById(1);
+		List<ContaEntity> contaList = contaRespository
+				.findByNumeroAgenciaAndNumeroConta(numeroAgencia, numeroConta);
 		
-		ContaEntity contaEntity = contaOptional.get();
+		ContaEntity contaEntity = contaList.get(0);
 		
 		return contaEntity;
 		

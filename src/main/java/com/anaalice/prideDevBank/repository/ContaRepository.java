@@ -1,14 +1,16 @@
 package com.anaalice.prideDevBank.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.anaalice.prideDevBank.entity.ContaEntity;
 
-public interface ContaRepository extends CrudRepository<ContaEntity, Integer> {
+
+@Repository
+public interface ContaRepository extends JpaRepository<ContaEntity, Integer> {
 	
-	ContaEntity findByNumeroConta( String numeroConta);
-	
-	ContaEntity findByNumeroContaAndNumeroAgencia(String numeroConta, String numeroAgencia);
-	
+	public List<ContaEntity> findByNumeroAgenciaAndNumeroConta(String numeroAgencia,String numeroConta);
 
 }
