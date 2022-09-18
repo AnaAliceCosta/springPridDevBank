@@ -1,17 +1,15 @@
-package com.anaalice.prideDevBank.services;
+package br.com.anaalice.prideDevBank.services;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.List;
 
+import br.com.anaalice.prideDevBank.entity.ContaEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.anaalice.prideDevBank.entity.ContaEntity;
-import com.anaalice.prideDevBank.entity.TransacaoEntity;
-import com.anaalice.prideDevBank.repository.TransacaoRepository;
-import com.anaalice.prideDevBank.util.ValidationUtil;
+import br.com.anaalice.prideDevBank.entity.TransacaoEntity;
+import br.com.anaalice.prideDevBank.repository.TransacaoRepository;
+import br.com.anaalice.prideDevBank.util.ValidationUtil;
 
 @Service
 public class TransacaoService {

@@ -1,4 +1,4 @@
-package com.anaalice.prideDevBank.exception;
+package br.com.anaalice.prideDevBank.exception;
 
 public class ContaInsuficienteExeption extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.anaalice.prideDevBank.entity;
+package br.com.anaalice.prideDevBank.entity;
 
 import java.io.Serializable;
 

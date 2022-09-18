@@ -1,4 +1,4 @@
-package com.anaalice.prideDevBank.entity;
+package br.com.anaalice.prideDevBank.entity;
 
 import java.io.Serializable;
 
@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import net.bytebuddy.implementation.bytecode.constant.IntegerConstant;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -51,7 +52,7 @@ public class ClienteEntity implements Serializable {
 	public String getNomeSocial() {
 		return nomeSocial;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	

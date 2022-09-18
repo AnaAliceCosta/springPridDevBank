@@ -16,6 +16,6 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:40807 -javaagent:/home/ana/eclipse/java-2020-03/eclipse/configuration/org.eclipse.osgi/217/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 com.anaalice.prideDevBank.PrideDevBankApplication
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:40807 -javaagent:/home/ana/eclipse/java-2020-03/eclipse/configuration/org.eclipse.osgi/217/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 br.com.anaalice.prideDevBank.PrideDevBankApplication
 
 Host: 

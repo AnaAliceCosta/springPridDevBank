@@ -1,9 +1,7 @@
-package com.anaalice.prideDevBank.entity;
+package br.com.anaalice.prideDevBank.entity;
 
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

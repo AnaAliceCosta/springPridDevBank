@@ -1,4 +1,4 @@
-package com.anaalice.prideDevBank.controller;
+package br.com.anaalice.prideDevBank.controller;
 
 
 import java.net.URI;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anaalice.prideDevBank.entity.ClienteEntity;
-import com.anaalice.prideDevBank.services.ClienteService;
+import br.com.anaalice.prideDevBank.entity.ClienteEntity;
+import br.com.anaalice.prideDevBank.services.ClienteService;
 
 @RestController
 public class ClienteController {

@@ -1,10 +1,10 @@
-package com.anaalice.prideDevBank.util;
+package br.com.anaalice.prideDevBank.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.anaalice.prideDevBank.entity.ContaEntity;
-import com.anaalice.prideDevBank.exception.ContaInsuficienteExeption;
+import br.com.anaalice.prideDevBank.entity.ContaEntity;
+import br.com.anaalice.prideDevBank.exception.ContaInsuficienteExeption;
 
 
 public class ValidationUtil {

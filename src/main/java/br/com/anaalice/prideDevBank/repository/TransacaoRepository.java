@@ -1,12 +1,12 @@
-package com.anaalice.prideDevBank.repository;
+package br.com.anaalice.prideDevBank.repository;
 
 import java.util.List;
 
+import br.com.anaalice.prideDevBank.entity.ContaEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.anaalice.prideDevBank.entity.ContaEntity;
-import com.anaalice.prideDevBank.entity.TransacaoEntity;
+import br.com.anaalice.prideDevBank.entity.TransacaoEntity;
 
 
 @Repository

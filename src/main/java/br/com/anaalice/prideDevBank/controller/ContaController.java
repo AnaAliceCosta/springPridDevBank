@@ -1,4 +1,4 @@
-package com.anaalice.prideDevBank.controller;
+package br.com.anaalice.prideDevBank.controller;
 
 import java.net.URI;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anaalice.prideDevBank.entity.ContaEntity;
-import com.anaalice.prideDevBank.services.ContaService;
+import br.com.anaalice.prideDevBank.entity.ContaEntity;
+import br.com.anaalice.prideDevBank.services.ContaService;
 
 
 @RestController

@@ -1,11 +1,10 @@
-package com.anaalice.prideDevBank.repository;
+package br.com.anaalice.prideDevBank.repository;
 
 import java.util.List;
 
+import br.com.anaalice.prideDevBank.entity.ContaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import com.anaalice.prideDevBank.entity.ContaEntity;
 
 
 @Repository
